@@ -1,0 +1,315 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RF_Module:ESP32-WROOM-32 U101
+U 1 1 5E66704A
+P 2610 3020
+F 0 "U101" H 2610 4601 50  0000 C CNN
+F 1 "ESP32-WROOM-32" H 2610 4510 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 2610 1520 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 2310 3070 50  0001 C CNN
+	1    2610 3020
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5E66A0DE
+P 2610 4510
+F 0 "#PWR0101" H 2610 4260 50  0001 C CNN
+F 1 "GND" H 2615 4337 50  0000 C CNN
+F 2 "" H 2610 4510 50  0001 C CNN
+F 3 "" H 2610 4510 50  0001 C CNN
+	1    2610 4510
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2610 4510 2610 4420
+$Comp
+L power:+3V3 #PWR0102
+U 1 1 5E66B7BD
+P 1100 1230
+F 0 "#PWR0102" H 1100 1080 50  0001 C CNN
+F 1 "+3V3" H 1115 1403 50  0000 C CNN
+F 2 "" H 1100 1230 50  0001 C CNN
+F 3 "" H 1100 1230 50  0001 C CNN
+	1    1100 1230
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Barrel-Power-Connectors:PJ-202A J101
+U 1 1 5E66E8D0
+P 880 1260
+F 0 "J101" H 813 1485 50  0000 C CNN
+F 1 "PJ-202A" H 813 1394 50  0000 C CNN
+F 2 "digikey-footprints:Barrel_Jack_5.5mmODx2.1mmID_PJ-202A" H 1080 1460 60  0001 L CNN
+F 3 "https://www.cui.com/product/resource/digikeypdf/pj-202a.pdf" H 1080 1560 60  0001 L CNN
+F 4 "CP-202A-ND" H 1080 1660 60  0001 L CNN "Digi-Key_PN"
+F 5 "PJ-202A" H 1080 1760 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1080 1860 60  0001 L CNN "Category"
+F 7 "Barrel - Power Connectors" H 1080 1960 60  0001 L CNN "Family"
+F 8 "https://www.cui.com/product/resource/digikeypdf/pj-202a.pdf" H 1080 2060 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/cui-inc/PJ-202A/CP-202A-ND/252007" H 1080 2160 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN PWR JACK 2X5.5MM KINKED PIN" H 1080 2260 60  0001 L CNN "Description"
+F 11 "CUI Inc." H 1080 2360 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1080 2460 60  0001 L CNN "Status"
+	1    880  1260
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	980  1260 1100 1260
+Wire Wire Line
+	1100 1260 1100 1230
+$Comp
+L power:GND #PWR0103
+U 1 1 5E67028B
+P 1100 1460
+F 0 "#PWR0103" H 1100 1210 50  0001 C CNN
+F 1 "GND" H 1105 1287 50  0000 C CNN
+F 2 "" H 1100 1460 50  0001 C CNN
+F 3 "" H 1100 1460 50  0001 C CNN
+	1    1100 1460
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	980  1360 980  1460
+Wire Wire Line
+	980  1460 1100 1460
+Connection ~ 980  1460
+$Comp
+L Device:R R101
+U 1 1 5E67191A
+P 1880 1670
+F 0 "R101" V 1800 1620 50  0000 L CNN
+F 1 "10k" V 1880 1610 50  0000 L CNN
+F 2 "digikey-footprints:0805" V 1810 1670 50  0001 C CNN
+F 3 "~" H 1880 1670 50  0001 C CNN
+	1    1880 1670
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2010 1820 1880 1820
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 5E6730F8
+P 1880 1420
+F 0 "#PWR0104" H 1880 1270 50  0001 C CNN
+F 1 "+3V3" H 1895 1593 50  0000 C CNN
+F 2 "" H 1880 1420 50  0001 C CNN
+F 3 "" H 1880 1420 50  0001 C CNN
+	1    1880 1420
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2610 1620 2610 1460
+Wire Wire Line
+	2610 1460 1880 1460
+Wire Wire Line
+	1880 1460 1880 1420
+Wire Wire Line
+	1880 1460 1880 1520
+Connection ~ 1880 1460
+$Comp
+L power:GND #PWR0105
+U 1 1 5E6765CD
+P 3690 1240
+F 0 "#PWR0105" H 3690 990 50  0001 C CNN
+F 1 "GND" H 3695 1067 50  0000 C CNN
+F 2 "" H 3690 1240 50  0001 C CNN
+F 3 "" H 3690 1240 50  0001 C CNN
+	1    3690 1240
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J103
+U 1 1 5E6771AD
+P 4030 1040
+F 0 "J103" H 4002 972 50  0000 R CNN
+F 1 "Conn_01x05_Male" H 4002 1063 50  0000 R CNN
+F 2 "Connector_JST:JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical" H 4030 1040 50  0001 C CNN
+F 3 "~" H 4030 1040 50  0001 C CNN
+	1    4030 1040
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3830 1140 3680 1140
+Wire Wire Line
+	3830 1040 3680 1040
+Text Label 3680 1140 0    50   ~ 0
+TX
+Text Label 3680 1040 0    50   ~ 0
+RX
+Wire Wire Line
+	3830 940  3690 940 
+Wire Wire Line
+	3830 840  3690 840 
+Text Label 3690 940  0    50   ~ 0
+EN
+Text Label 3690 840  0    50   ~ 0
+IO0
+Wire Wire Line
+	3690 1240 3830 1240
+Wire Wire Line
+	3210 1820 3400 1820
+Wire Wire Line
+	3210 1920 3390 1920
+Wire Wire Line
+	3210 2120 3390 2120
+Text Label 3280 1820 0    50   ~ 0
+IO0
+Text Label 3290 1920 0    50   ~ 0
+TX
+Text Label 3290 2120 0    50   ~ 0
+RX
+Text Label 1930 1820 0    50   ~ 0
+EN
+$Comp
+L Connector:Conn_01x03_Female J102
+U 1 1 5E67C374
+P 3800 2720
+F 0 "J102" H 3828 2746 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 3828 2655 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical" H 3800 2720 50  0001 C CNN
+F 3 "~" H 3800 2720 50  0001 C CNN
+	1    3800 2720
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3210 2720 3450 2720
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 5E680311
+P 3550 2590
+F 0 "#PWR0106" H 3550 2440 50  0001 C CNN
+F 1 "+3V3" H 3565 2763 50  0000 C CNN
+F 2 "" H 3550 2590 50  0001 C CNN
+F 3 "" H 3550 2590 50  0001 C CNN
+	1    3550 2590
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E680ED1
+P 3550 2860
+F 0 "#PWR0107" H 3550 2610 50  0001 C CNN
+F 1 "GND" H 3555 2687 50  0000 C CNN
+F 2 "" H 3550 2860 50  0001 C CNN
+F 3 "" H 3550 2860 50  0001 C CNN
+	1    3550 2860
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2620 3550 2620
+Wire Wire Line
+	3550 2620 3550 2590
+Wire Wire Line
+	3600 2820 3550 2820
+Wire Wire Line
+	3550 2820 3550 2860
+$Comp
+L Device:LED D101
+U 1 1 5E682C13
+P 3450 3320
+F 0 "D101" V 3489 3202 50  0000 R CNN
+F 1 "LED" V 3398 3202 50  0000 R CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 3450 3320 50  0001 C CNN
+F 3 "~" H 3450 3320 50  0001 C CNN
+	1    3450 3320
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3450 2720 3450 3170
+Connection ~ 3450 2720
+Wire Wire Line
+	3450 2720 3600 2720
+$Comp
+L Device:R R102
+U 1 1 5E684967
+P 3450 3710
+F 0 "R102" V 3370 3660 50  0000 L CNN
+F 1 "500" V 3450 3640 50  0000 L CNN
+F 2 "digikey-footprints:0805" V 3380 3710 50  0001 C CNN
+F 3 "~" H 3450 3710 50  0001 C CNN
+	1    3450 3710
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3470 3450 3560
+$Comp
+L power:GND #PWR0108
+U 1 1 5E685D02
+P 3450 3940
+F 0 "#PWR0108" H 3450 3690 50  0001 C CNN
+F 1 "GND" H 3455 3767 50  0000 C CNN
+F 2 "" H 3450 3940 50  0001 C CNN
+F 3 "" H 3450 3940 50  0001 C CNN
+	1    3450 3940
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3860 3450 3940
+NoConn ~ 2010 2020
+NoConn ~ 2010 2120
+NoConn ~ 2010 3020
+NoConn ~ 2010 3120
+NoConn ~ 2010 3220
+NoConn ~ 2010 3320
+NoConn ~ 2010 3420
+NoConn ~ 2010 3520
+NoConn ~ 3210 2020
+NoConn ~ 3210 2220
+NoConn ~ 3210 2320
+NoConn ~ 3210 2420
+NoConn ~ 3210 2520
+NoConn ~ 3210 2620
+NoConn ~ 3210 2820
+NoConn ~ 3210 2920
+NoConn ~ 3210 3020
+NoConn ~ 3210 3120
+NoConn ~ 3210 3220
+NoConn ~ 3210 3320
+NoConn ~ 3210 3420
+NoConn ~ 3210 3520
+NoConn ~ 3210 3620
+NoConn ~ 3210 3720
+NoConn ~ 3210 3820
+NoConn ~ 3210 3920
+NoConn ~ 3210 4020
+NoConn ~ 3210 4120
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E68C651
+P 1100 1260
+F 0 "#FLG0101" H 1100 1335 50  0001 C CNN
+F 1 "PWR_FLAG" V 1100 1388 50  0000 L CNN
+F 2 "" H 1100 1260 50  0001 C CNN
+F 3 "~" H 1100 1260 50  0001 C CNN
+	1    1100 1260
+	0    1    1    0   
+$EndComp
+Connection ~ 1100 1260
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E68D2C4
+P 1100 1460
+F 0 "#FLG0102" H 1100 1535 50  0001 C CNN
+F 1 "PWR_FLAG" V 1100 1588 50  0000 L CNN
+F 2 "" H 1100 1460 50  0001 C CNN
+F 3 "~" H 1100 1460 50  0001 C CNN
+	1    1100 1460
+	0    1    1    0   
+$EndComp
+Connection ~ 1100 1460
+$EndSCHEMATC

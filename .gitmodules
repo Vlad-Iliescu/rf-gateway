@@ -1,0 +1,3 @@
+[submodule "custom-lib"]
+	path = custom-lib
+	url = https://github.com/Vlad-Iliescu/custom-lib
